@@ -1,8 +1,10 @@
 {
   "description": "demo mean stack app with angular 2.0 and typescript",
   "license": "ISC",
+  "repository": "dickeyxxx/mean-ng2",
   "scripts": {
-    "start": "node server"
+    "start": "node server",
+    "post_instalL": "gulp build"
   },
   "dependencies": {
     "body-parser": "^1.14.1",
