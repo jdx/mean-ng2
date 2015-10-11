@@ -2,6 +2,9 @@
   "description": "demo mean stack app with angular 2.0 and typescript",
   "license": "ISC",
   "repository": "dickeyxxx/mean-ng2",
+  "engines": {
+    "node": "^4.1.2"
+  },
   "scripts": {
     "start": "node server",
     "postinstall": "bower install && gulp build"
