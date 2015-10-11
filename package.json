@@ -4,7 +4,7 @@
   "repository": "dickeyxxx/mean-ng2",
   "scripts": {
     "start": "node server",
-    "postinstall": "gulp build"
+    "postinstall": "bower install && gulp build"
   },
   "dependencies": {
     "body-parser": "^1.14.1",
