@@ -1,0 +1,6 @@
+{
+  "name": "mean-ng2",
+  "dependencies": {
+    "system.js": "~0.19.4"
+  }
+}
