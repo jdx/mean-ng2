@@ -7,7 +7,7 @@
   },
   "scripts": {
     "start": "node server",
-    "postinstall": "bower install && gulp build"
+    "postinstall": "bower install && tsd install && gulp build"
   },
   "dependencies": {
     "body-parser": "^1.14.1",
@@ -17,6 +17,7 @@
     "gulp": "^3.9.0",
     "gulp-nodemon": "^2.0.4",
     "gulp-typescript": "^2.9.2",
-    "morgan": "^1.6.1"
+    "morgan": "^1.6.1",
+    "tsd": "^0.6.5"
   }
 }
