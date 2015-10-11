@@ -1,0 +1,14 @@
+{
+  "description": "demo mean stack app with angular 2.0 and typescript",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "bower": "^1.5.3",
+    "ejs": "^2.3.4",
+    "express": "^4.13.3",
+    "gulp": "^3.9.0",
+    "gulp-nodemon": "^2.0.4",
+    "gulp-typescript": "^2.9.2",
+    "morgan": "^1.6.1"
+  }
+}
