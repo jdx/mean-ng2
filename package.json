@@ -7,7 +7,8 @@
   },
   "scripts": {
     "start": "node server",
-    "postinstall": "bower install && tsd install && gulp build"
+    "postinstall": "bower install && tsd install && gulp build",
+    "setupdb": "mongoimport --db mean-ng2 --collection restaurants --drop --file dataset.json --host 127.0.0.1 --port 27017"
   },
   "dependencies": {
     "body-parser": "^1.14.1",
