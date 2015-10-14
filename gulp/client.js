@@ -4,7 +4,7 @@ let gulp       = require('gulp');
 let typescript = require('gulp-typescript');
 
 gulp.task('build:client', function () {
-  let project = typescript.createProject('client/tsconfig.json');
+  let project = typescript.createProject('tsconfig.json');
   return project.src()
     .pipe(typescript(project))
     .pipe(gulp.dest('public'));

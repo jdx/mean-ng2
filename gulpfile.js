@@ -7,5 +7,5 @@ let gulp = require('gulp');
 
 gulp.task('default', ['build']);
 gulp.task('build', ['build:client']);
-gulp.task('watch', ['watch:client']);
+gulp.task('watch', ['build', 'watch:client']);
 gulp.task('dev', ['watch', 'server']);
