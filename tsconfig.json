@@ -16,8 +16,9 @@
     "client/components/friends.ts",
     "client/components/todo.ts",
     "client/services/friends.ts",
+    "client/services/todo.ts",
     "client/typings/angular2/angular2.d.ts",
-    "client/typings/es6-promise/es6-promise.d.ts",
+    "client/typings/angular2/http.d.ts",
     "client/typings/es6-shim/es6-shim.d.ts",
     "client/typings/rx/rx-lite.d.ts",
     "client/typings/rx/rx.d.ts"

@@ -1,7 +1,9 @@
 import {Component, View, NgFor, FORM_DIRECTIVES} from 'angular2/angular2';
+import TodoService from '../services/todo';
 
 @Component({
   selector: 'todo',
+  bindings: [TodoService]
 })
 @View({
   template: `
@@ -19,8 +21,8 @@ class TodoComponent {
   todos: Array<string>;
   newTodo: string;
 
-  constructor() {
-    this.todos = ["Eat Breakfast", "Walk Dog", "Breathe"];
+  constructor(public todoService: TodoService) {
+    todoService.getTodos().subscribe(todos => this.todos = todos)
   }
 
   addTodo() {

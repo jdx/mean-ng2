@@ -3,22 +3,21 @@
   "repo": "borisyankov/DefinitelyTyped",
   "ref": "master",
   "path": "client/typings",
-  "bundle": "typings/tsd.d.ts",
   "installed": {
-    "rx/rx-lite.d.ts": {
-      "commit": "3fc1377ce29dd9670975cb68615edf1b819fc4a5"
+    "angular2/angular2.d.ts": {
+      "commit": "5f6d2d125462fb1152a2a38ed326704270f1af3c"
     },
-    "es6-promise/es6-promise.d.ts": {
-      "commit": "3fc1377ce29dd9670975cb68615edf1b819fc4a5"
-    },
-    "rx/rx.d.ts": {
-      "commit": "3fc1377ce29dd9670975cb68615edf1b819fc4a5"
+    "angular2/http.d.ts": {
+      "commit": "06b1fc9d8a3bb93d668d81fb35b2b477888bdb76"
     },
     "es6-shim/es6-shim.d.ts": {
-      "commit": "3fc1377ce29dd9670975cb68615edf1b819fc4a5"
+      "commit": "5f6d2d125462fb1152a2a38ed326704270f1af3c"
     },
-    "angular2/angular2.d.ts": {
-      "commit": "3fc1377ce29dd9670975cb68615edf1b819fc4a5"
+    "rx/rx-lite.d.ts": {
+      "commit": "5f6d2d125462fb1152a2a38ed326704270f1af3c"
+    },
+    "rx/rx.d.ts": {
+      "commit": "5f6d2d125462fb1152a2a38ed326704270f1af3c"
     }
   }
 }

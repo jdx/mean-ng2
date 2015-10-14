@@ -1,4 +1,5 @@
 import {Component, View, bootstrap} from 'angular2/angular2';
+import {HTTP_BINDINGS} from 'angular2/http';
 import FriendsComponent from './components/friends';
 import TodoComponent from './components/todo';
 
@@ -20,8 +21,6 @@ import TodoComponent from './components/todo';
 })
 
 // Component controller
-class MyAppComponent {
-}
+class MyAppComponent { }
 
-
-bootstrap(MyAppComponent);
+bootstrap(MyAppComponent, [HTTP_BINDINGS]);
