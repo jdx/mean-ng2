@@ -1,4 +1,4 @@
-import {Component, View, NgFor} from 'angular2/angular2';
+import {Component, View, NgFor, FORM_DIRECTIVES} from 'angular2/angular2';
 
 @Component({
   selector: 'todo',
@@ -10,18 +10,29 @@ import {Component, View, NgFor} from 'angular2/angular2';
       {{ todo }}
     </li>
   </ul>
+  <input [(ng-model)]="newTodo" (keyup)="doneTyping($event)">
+  <button (click)="addTodo()">Add Todo</button>
   `,
-  directives: [NgFor]
+  directives: [NgFor, FORM_DIRECTIVES]
 })
 class TodoComponent {
   todos: Array<string>;
+  newTodo: string;
 
   constructor() {
     this.todos = ["Eat Breakfast", "Walk Dog", "Breathe"];
   }
 
-  addTodo(todo: string) {
-    this.todos.push(todo);
+  addTodo() {
+    if (!this.newTodo) return;
+    this.todos.push(this.newTodo);
+    this.newTodo = "";
+  }
+
+  doneTyping($event: KeyboardEvent) {
+    if ($event.which === 13) {
+      this.addTodo();
+    }
   }
 }
 
