@@ -1,0 +1,11 @@
+<ul>
+  <li *ng-for="#todo of todos">
+    {{ todo }}
+  </li>
+</ul>
+<form class='form-inline'>
+  <div class='form-group'>
+    <input type='text' placeholder='New todo' class='form-control' [(ng-model)]="newTodo">
+  </div>
+  <button class='btn btn-default' (click)="addTodo()">Add Todo</button>
+</form>

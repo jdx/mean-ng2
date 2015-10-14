@@ -6,15 +6,7 @@ import TodoService from '../services/todo';
   bindings: [TodoService]
 })
 @View({
-  template: `
-  <ul>
-    <li *ng-for="#todo of todos">
-      {{ todo }}
-    </li>
-  </ul>
-  <input [(ng-model)]="newTodo" (keyup)="doneTyping($event)">
-  <button (click)="addTodo()">Add Todo</button>
-  `,
+  templateUrl: '/templates/todo.html',
   directives: [NgFor, FORM_DIRECTIVES]
 })
 class TodoComponent {
@@ -22,19 +14,13 @@ class TodoComponent {
   newTodo: string;
 
   constructor(public todoService: TodoService) {
-    todoService.getTodos().subscribe(todos => this.todos = todos)
+    todoService.getTodos().subscribe((todos: Array<string>) => this.todos = todos)
   }
 
   addTodo() {
     if (!this.newTodo) return;
-    this.todos.push(this.newTodo);
+    //this.todos.push(this.newTodo);
     this.newTodo = "";
-  }
-
-  doneTyping($event: KeyboardEvent) {
-    if ($event.which === 13) {
-      this.addTodo();
-    }
   }
 }
 
